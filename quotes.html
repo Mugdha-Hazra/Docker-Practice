@@ -1,0 +1,32 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quotes</title>
+</head>
+
+<body>
+    <h1>Quotes</h1>
+    {% for quote in quotes %}
+    <p>{{ quote }}</p>
+    {% endfor %}
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quotes</title>
+</head>
+
+<body>
+    <h1>Quotes</h1>
+    {% for quote in quotes %}
+    <p>{{ quote.text }}</p>
+    <p>- {{ quote.author }}</p>
+    <br> {% endfor %}
+</body>
+
+</html>
